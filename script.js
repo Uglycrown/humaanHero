@@ -22,7 +22,7 @@ lenis.on("scroll", (e) => {
   if (videoAtTop && !wasVideoAtTop && !isScrollBlocked) {
     isScrollBlocked = true;
     scrollBlockCount = 0;
-    console.log("Video reached top - blocking scrolling for 3 attempts");
+    console.log("Video reached top - blocking scrolling for 5 attempts");
   }
 
   ScrollTrigger.update();
@@ -113,7 +113,7 @@ gsap.ticker.add((time) => {
   lenis.raf(time * 1000);
 });
 
-gsap.ticker.lagSmoothing(10);
+gsap.ticker.lagSmoothing(0);
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -138,5 +138,6 @@ tl.to(video, {
   })
   .to(video, {
     scale: 1.2,
+    height: "110vh",
     ease: "power2.inOut",
   });

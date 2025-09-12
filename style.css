@@ -3,7 +3,7 @@
 body {
     font-family: 'Neue Montreal', sans-serif;
     margin: 0;
-    background-color: #610808;
+    background-color: #f0f1e5;
 }
 
 .hero {
@@ -11,7 +11,7 @@ body {
 }
 
 .Hero-heading {
-    padding-bottom: 9%;
+    padding-bottom: 8%;
 }
 
 h1 {
